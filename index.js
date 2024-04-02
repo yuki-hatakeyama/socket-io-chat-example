@@ -6,7 +6,11 @@ import { Server } from "socket.io";
 
 const app = express();
 const server = createServer(app);
-const io = new Server(server);
+const io = new Server(server, {
+  // 接続状態を回復のためのオプションを追加・
+  // 部屋の修復や見逃したイベントを送信するためのもの
+  connectionStateRecovery: {},
+});
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
