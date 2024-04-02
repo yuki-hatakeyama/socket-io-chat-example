@@ -18,6 +18,9 @@ app.get("/", (req, res) => {
 io.on("connection", (socket) => {
   socket.on("chat message", (msg) => {
     console.log("message: " + msg);
+
+    // 全員にイベントを送信するためのメソッド
+    io.emit("chat message", msg);
   });
 });
 
