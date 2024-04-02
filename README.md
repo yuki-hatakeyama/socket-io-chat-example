@@ -34,5 +34,5 @@ npm run start
 
 - Express
 - Socket.IO
-- JavaScript
+- TypeScript
 - SQLite3
