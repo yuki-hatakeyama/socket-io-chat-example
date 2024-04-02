@@ -17,6 +17,14 @@ Node.js v20.11.0
 
 ```bash
 npm install
+```
+
+## ビルドと起動
+
+プロジェクトをビルドしてローカルサーバーを起動するには、以下の手順を実行してください。
+
+```bash
+npm run build
 npm run start
 ```
 
